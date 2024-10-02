@@ -1,0 +1,46 @@
+/* styles.css */
+:root {
+    --bg-color: #000000; /* Pure black background */
+    --text-color: #ffffff; /* White text color */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: var(--bg-color); /* Ensure body stays pure black */
+    color: var(--text-color);
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    background: none; /* Remove any background from container */
+    text-align: center;
+}
+
+#main-text {
+    font-size: 6rem;
+    font-weight: bold;
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* Keyframes for smooth fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
